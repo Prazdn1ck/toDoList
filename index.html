@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>To-Do Задачник</title>
+    <style>
+      .completed {
+        text-decoration: line-through;
+        color: gray;
+      }
+      .task {
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Мій To-Do список</h1>
+
+    <input type="text" id="taskInput" placeholder="Нова задача..." />
+    <button id="addBtn">Додати</button>
+
+    <h3>Задачі:</h3>
+    <ul id="taskList"></ul>
+
+    <p>✅ Виконано: <span id="doneCount">0</span></p>
+    <p>❌ Не виконано: <span id="notDoneCount">0</span></p>
+
+    <script src="app.js"></script>
+  </body>
+</html>
